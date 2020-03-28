@@ -69,7 +69,7 @@ stages:
 - stage: 'Deploy to Dev'
   displayName: 'Deploy the to the dev environment'
   dependsOn: Build
-  condition: 
+  condition: |
     and
     (
       succeeded()
